@@ -18,7 +18,7 @@ function! utils#OpenListWindow( vertical, openpos, size, name, filetype, autoclo
     endif
 
     exe 'silent keepalt ' . a:openpos . mode . a:size . 'split ' . a:name
-    exe 'silent ' . mode . 'resize ' . a:size
+    " exe 'silent ' . mode . 'resize ' . a:size
     exe 'setlocal filetype=' . a:filetype
 
     setlocal noreadonly 
